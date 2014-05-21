@@ -12,7 +12,7 @@
     <!-- <dubbo:registry client="zkclient" protocol="zookeeper" address="192.168.1.12:2181,192.168.1.12:2182" /> -->
     <!-- <dubbo:registry  client="zkclient" protocol="zookeeper" address="192.168.38.10:2181,192.168.38.10:2182" /> -->
     <dubbo:consumer init="true"/>
- 	<dubbo:registry  client="curator" protocol="zookeeper" address="192.168.38.10:2181,192.168.38.10:2182" />
+ 	<dubbo:registry  client="curator" protocol="zookeeper" address="10.1.72.34:2181,10.1.72.34:2182,10.1.72.34:2183" />
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
     <dubbo:reference id="demoService" interface="com.flysqrlboy.service.interf.DemoService" />
 	<dubbo:reference id="helloService" interface="com.flysqrlboy.service.interf.HelloService"/>
